@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fudge.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="AccentYellow">#F4E8C1</Color>
+            <Color x:Key="AccentLiteGreen">#A0C1B9</Color>
+            <Color x:Key="AccentDarkGreen">#70A0AF</Color>
+            <Color x:Key="AccentLitePurple">#706993</Color>
+            <Color x:Key="AccentDarkPurple">#331E38</Color>
+
+            <Color x:Key="ChartColor1">#FF0000</Color>
+            <Color x:Key="ChartColor2">#FF8700</Color>
+            <Color x:Key="ChartColor3">#FFD300</Color>
+            <Color x:Key="ChartColor4">#DEFF0A</Color>
+            <Color x:Key="ChartColor5">#A1FF0A</Color>
+            <Color x:Key="ChartColor6">#0AFF99</Color>
+            <Color x:Key="ChartColor7">#0AEFFF</Color>
+            <Color x:Key="ChartColor8">#147DF5</Color>
+            <Color x:Key="ChartColor9">#580AFF</Color>
+            <Color x:Key="ChartColor10">#BE0AFF</Color>
+
+            <Color x:Key="BackgroundDark">#2E2E2E</Color>
+            <Color x:Key="BackgroundLight">#FAFAFA</Color>
+
+            <Style x:Key="MainButtonUnChecked" TargetType="Button">
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="TextColor" Value="{AppThemeBinding  Dark={StaticResource BackgroundDark}, Light= {StaticResource BackgroundLight}}" />
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource AccentYellow}, Light={StaticResource AccentDarkGreen}}" />
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="MainButtonChecked" TargetType="Button">
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource AccentYellow}, Light={StaticResource AccentDarkGreen}}"  />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource AccentYellow}, Light={StaticResource AccentDarkGreen}}"/>
+                <Setter Property="BorderWidth" Value="2"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="FrameAddNews" TargetType="Frame">
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource AccentYellow}, Light={StaticResource AccentDarkGreen}}" />
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+
+            <Style x:Key="TitleStyle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource BackgroundDark}}"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="TransactionListStyle" TargetType="Frame">
+                <Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource AccentYellow}, Light={StaticResource AccentDarkGreen}}" />
+                <Setter Property="Padding" Value="10,10,10,10" />
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource AccentYellow}, Light={StaticResource AccentDarkGreen}}" />
+                <Setter Property="Opacity" Value="1"/>
+                <Setter Property="HasShadow" Value="True"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

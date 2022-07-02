@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Img\arrow_down.svg" />
+    <None Remove="Img\arrow_up.svg" />
+    <None Remove="Img\bar_chart_2.svg" />
+    <None Remove="Img\dollar_sign.svg" />
+    <None Remove="Img\investment.svg" />
+    <None Remove="Img\personal_finance.svg" />
+    <None Remove="Img\personal_finance_light.svg" />
+    <None Remove="Img\shopping_bag.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Resizetizer.NT" Version="0.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Convertors\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SharedImage Include="Img\arrow_down.svg" />
+    <SharedImage Include="Img\arrow_up.svg" />
+    <SharedImage Include="Img\bar_chart_2.svg" />
+    <SharedImage Include="Img\dollar_sign.svg" />
+    <SharedImage Include="Img\investment.svg"/>
+    <SharedImage Include="Img\personal_finance.svg" />
+    <SharedImage Include="Img\personal_finance_light.svg" />
+    <SharedImage Include="Img\shopping_bag.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\WelcomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

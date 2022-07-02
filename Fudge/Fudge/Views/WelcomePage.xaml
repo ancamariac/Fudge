@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fudge.Views.WelcomePage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{AppThemeBinding Dark={StaticResource BackgroundDark}, Light={StaticResource BackgroundLight}}">
+    <ContentPage.Content>
+        <StackLayout Padding="0,16,0,16" VerticalOptions="CenterAndExpand" Spacing="43">
+            <Image Source="{AppThemeBinding Dark=investment.png, 
+                                            Light=investment.png}" />
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="42">
+                <Label Text="Track your expanses" 
+                       FontSize="36" 
+                       FontAttributes="Bold" 
+                       TextColor="{AppThemeBinding Light={StaticResource AccentDarkGreen}, Dark={StaticResource AccentYellow}}"/>
+                <Button x:Name="getStarted" Text="Get Started"  
+                        
+                        Style="{StaticResource MainButtonUnChecked}"/>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Spacing="42">
+                <Label Text="take care of your 💸" 
+                       FontAttributes="Italic" 
+                       FontSize="12" 
+                       HorizontalOptions="Center" 
+                       TextColor="{AppThemeBinding Light={StaticResource AccentDarkPurple}, Dark={StaticResource AccentYellow}}"/>
+            </StackLayout>
+
+        </StackLayout>
+
+
+
+    </ContentPage.Content>
+</ContentPage>
