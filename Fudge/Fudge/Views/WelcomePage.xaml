@@ -14,20 +14,18 @@
                        FontAttributes="Bold" 
                        TextColor="{AppThemeBinding Light={StaticResource AccentDarkGreen}, Dark={StaticResource AccentYellow}}"/>
                 <Button x:Name="getStarted" Text="Get Started"  
-                        
+                        Clicked="getStarted_Clicked"
                         Style="{StaticResource MainButtonUnChecked}"/>
             </StackLayout>
 
-            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Spacing="42">
-                <Label Text="take care of your 💸" 
-                       FontAttributes="Italic" 
-                       FontSize="12" 
-                       HorizontalOptions="Center" 
-                       TextColor="{AppThemeBinding Light={StaticResource AccentDarkPurple}, Dark={StaticResource AccentYellow}}"/>
-            </StackLayout>
+            <Label Text="take care of your 💸" 
+                    FontAttributes="Italic" 
+                    FontSize="12" 
+                    HorizontalOptions="Center" 
+                    TextColor="{AppThemeBinding Light={StaticResource AccentDarkPurple}, Dark={StaticResource AccentYellow}}"/>
+
 
         </StackLayout>
-
 
 
     </ContentPage.Content>
