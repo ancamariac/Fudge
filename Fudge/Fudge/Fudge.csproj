@@ -16,6 +16,8 @@
     <None Remove="Img\bar_chart_2.svg" />
     <None Remove="Img\dollar_sign.svg" />
     <None Remove="Img\investment.svg" />
+    <None Remove="Img\investment_dark.svg" />
+    <None Remove="Img\investment_light.svg" />
     <None Remove="Img\personal_finance.svg" />
     <None Remove="Img\personal_finance_light.svg" />
     <None Remove="Img\shopping_bag.svg" />
@@ -43,7 +45,9 @@
     <SharedImage Include="Img\arrow_up.svg" />
     <SharedImage Include="Img\bar_chart_2.svg" />
     <SharedImage Include="Img\dollar_sign.svg" />
-    <SharedImage Include="Img\investment.svg"/>
+    <SharedImage Include="Img\investment.svg" BaseSize ="350, 350"/>
+    <SharedImage Include="Img\investment_dark.svg" BaseSize ="350, 350"/>
+    <SharedImage Include="Img\investment_light.svg" BaseSize ="350, 350"/>
     <SharedImage Include="Img\personal_finance.svg" />
     <SharedImage Include="Img\personal_finance_light.svg" />
     <SharedImage Include="Img\shopping_bag.svg" />
