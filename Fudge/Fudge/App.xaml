@@ -27,7 +27,7 @@
             <Style x:Key="MainButtonUnChecked" TargetType="Button">
                 <Setter Property="CornerRadius" Value="20" />
                 <Setter Property="TextColor" Value="{AppThemeBinding  Dark={StaticResource BackgroundDark}, Light= {StaticResource BackgroundLight}}" />
-                <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource AccentYellow}, Light={StaticResource AccentDarkGreen}}" />
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource BackgroundLight}, Light={StaticResource AccentDarkGreen}}" />
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="FontSize" Value="16"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
@@ -35,9 +35,9 @@
 
             <Style x:Key="MainButtonChecked" TargetType="Button">
                 <Setter Property="CornerRadius" Value="20" />
-                <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource AccentYellow}, Light={StaticResource AccentDarkGreen}}"  />
+                <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource BackgroundLight}, Light={StaticResource AccentDarkGreen}}"  />
                 <Setter Property="BackgroundColor" Value="Transparent" />
-                <Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource AccentYellow}, Light={StaticResource AccentDarkGreen}}"/>
+                <Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource BackgroundLight}, Light={StaticResource AccentDarkGreen}}"/>
                 <Setter Property="BorderWidth" Value="2"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="FontSize" Value="16"/>
@@ -47,7 +47,7 @@
             <Style x:Key="FrameAddNews" TargetType="Frame">
                 <Setter Property="CornerRadius" Value="5"/>
                 <Setter Property="Padding" Value="10"/>
-                <Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource AccentYellow}, Light={StaticResource AccentDarkGreen}}" />
+                <Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource BackgroundLight}, Light={StaticResource AccentDarkGreen}}" />
                 <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 

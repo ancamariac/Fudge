@@ -12,7 +12,7 @@
                 <Label Text="Track your expanses" 
                        FontSize="36" 
                        FontAttributes="Bold" 
-                       TextColor="{AppThemeBinding Light={StaticResource AccentDarkGreen}, Dark={StaticResource AccentYellow}}"/>
+                       TextColor="{AppThemeBinding Light={StaticResource AccentDarkGreen}, Dark={StaticResource BackgroundLight}}"/>
                 <Button x:Name="getStarted" Text="Get Started"  
                         Clicked="getStarted_Clicked"
                         Style="{StaticResource MainButtonUnChecked}"/>
@@ -22,7 +22,7 @@
                     FontAttributes="Italic" 
                     FontSize="12" 
                     HorizontalOptions="Center" 
-                    TextColor="{AppThemeBinding Light={StaticResource AccentDarkPurple}, Dark={StaticResource AccentYellow}}"/>
+                    TextColor="{AppThemeBinding Light={StaticResource AccentDarkPurple}, Dark={StaticResource BackgroundLight}}"/>
 
 
         </StackLayout>
