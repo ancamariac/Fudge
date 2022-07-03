@@ -1,0 +1,5 @@
+- WelcomePage
+-> colors in Light mode
+
+- AddAccountPage
+-> overwrite default value of Initial Balance
