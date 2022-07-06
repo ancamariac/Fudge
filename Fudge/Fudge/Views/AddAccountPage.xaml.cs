@@ -29,7 +29,7 @@ namespace Fudge.Views
                 return;
             }
 
-            /*if (await Services.DatabaseConnection.VerifyIfAccExist(Name))
+            if (await Services.DatabaseConnection.VerifyIfAccExist(Name))
             {
                 await Services.DatabaseConnection.AddAccount(
                     new Models.Account
@@ -41,7 +41,7 @@ namespace Fudge.Views
 
             }
             else
-                await DisplayAlert("Alert!", "Account Exist, try another Name", "Ok");*/
+                await DisplayAlert("Alert!", "Account Exist, try another Name", "Ok");
 
             accountName.Text = "";
             accountBalance.Text = "0";
@@ -52,7 +52,7 @@ namespace Fudge.Views
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new MainTabbedPage());
+            await Navigation.PushAsync(new MainTabbedPage());
         }
     }
 }
