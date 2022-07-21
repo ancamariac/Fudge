@@ -9,6 +9,12 @@
             xmlns:view="clr-namespace:Fudge.Views"
             BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource BackgroundDark}}">
 
+    <NavigationPage Title="Bill"  IconImageSource="shopping_bag.png" >
+        <x:Arguments>
+            <view:ExpensesPage/>
+        </x:Arguments>
+    </NavigationPage>
+
     <NavigationPage Title="Cards" IconImageSource="dollar_sign.png" >
         <x:Arguments>
             <view:AccountsPage/>

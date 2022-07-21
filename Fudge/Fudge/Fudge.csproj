@@ -34,7 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Convertors\" />
     <Folder Include="Helpers\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
@@ -57,6 +56,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AddAccountPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ExpensesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\MainTabbedPage.xaml">
