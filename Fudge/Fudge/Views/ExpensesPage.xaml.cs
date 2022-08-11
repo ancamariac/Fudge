@@ -72,7 +72,7 @@ namespace Fudge.Views
 
         private async void addTransaction_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new AddTransactionPage());
+            await Navigation.PushAsync(new AddTransactionPage());
         }
 
         private void expemcesList_SelectionChanged(object sender, SelectionChangedEventArgs e)

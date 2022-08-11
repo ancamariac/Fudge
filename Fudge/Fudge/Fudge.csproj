@@ -43,9 +43,9 @@
     <SharedImage Include="Img\arrow_up.svg" />
     <SharedImage Include="Img\bar_chart_2.svg" />
     <SharedImage Include="Img\dollar_sign.svg" />
-    <SharedImage Include="Img\investment.svg" BaseSize="350, 350" />
-    <SharedImage Include="Img\investment_dark.svg" BaseSize="350, 350" />
-    <SharedImage Include="Img\investment_light.svg" BaseSize="350, 350" />
+    <SharedImage Include="Img\investment.svg" BaseSize="290, 290" />
+    <SharedImage Include="Img\investment_dark.svg" BaseSize="290, 290" />
+    <SharedImage Include="Img\investment_light.svg" BaseSize="290, 290" />
     <SharedImage Include="Img\personal_finance.svg" />
     <SharedImage Include="Img\personal_finance_light.svg" />
     <SharedImage Include="Img\shopping_bag.svg" />
@@ -56,6 +56,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AddAccountPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AddTransactionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ExpensesPage.xaml">
