@@ -3,6 +3,3 @@
 
 - AddAccountPage
 -> overwrite default value of Initial Balance
-
-ML magic scanning the receipt and add the expense automatically 
-test

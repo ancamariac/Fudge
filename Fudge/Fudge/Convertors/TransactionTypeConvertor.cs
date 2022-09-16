@@ -16,16 +16,16 @@ namespace Fudge.Convertors
 
                 if (val == "Income")
                 {
-                    return "arrow-up.png";
+                    return "arrow_up.png";
                 }
                 else
                 {
-                    return "arrow-down.png";
+                    return "arrow_down.png";
                 }
 
 
             }
-            return "arrow-down.png";
+            return "arrow_down.png";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

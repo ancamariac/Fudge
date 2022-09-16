@@ -1,5 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 using Xamarin.Forms.Xaml;
 
 namespace Fudge
@@ -9,6 +10,14 @@ namespace Fudge
         public App()
         {
             InitializeComponent();
+
+            VersionTracking.Track();
+            var firstLaunch = VersionTracking.IsFirstLaunchEver;
+
+            if (firstLaunch)
+                MainPage = new NavigationPage(new Views.WelcomePage());
+            else
+                MainPage = new NavigationPage(new Views.MainTabbedPage());
 
             MainPage = new NavigationPage(new Views.WelcomePage());
         }

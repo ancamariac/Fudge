@@ -15,6 +15,12 @@
         </x:Arguments>
     </NavigationPage>
 
+    <NavigationPage Title="Stats" IconImageSource="bar_chart_2.png" >
+        <x:Arguments>
+            <view:StatsPage/>
+        </x:Arguments>
+    </NavigationPage>
+    
     <NavigationPage Title="Cards" IconImageSource="dollar_sign.png" >
         <x:Arguments>
             <view:AccountsPage/>
