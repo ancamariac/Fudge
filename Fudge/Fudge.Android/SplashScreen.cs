@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Fudge.Droid
 {
-    [Activity(Label = "Fudge", MainLauncher = true, NoHistory = true, Theme = "@style/MyTheme.Splash")]
+    [Activity(Label = "Fudge", MainLauncher = false, NoHistory = true, Theme = "@style/MyTheme.Splash")]
     public class SplashScreen : Activity, Android.Animation.Animator.IAnimatorListener
     {
         public void OnAnimationCancel(Animator animation)
