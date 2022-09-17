@@ -32,7 +32,7 @@
                         HorizontalOptions="EndAndExpand" />
             </StackLayout>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="26" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="18" >
                 <Button Text="OverView" FontSize="Small" HeightRequest="5" Style="{StaticResource MainButtonChecked}" Clicked="Button_Clicked"/>
                 <Button Text="Incomes" FontSize="Small"  Style="{StaticResource MainButtonChecked}" Clicked="Button_Clicked"/>
                 <Button Text="Expenses" FontSize="Small"  Style="{StaticResource MainButtonChecked}" Clicked="Button_Clicked"/>

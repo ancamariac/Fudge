@@ -118,7 +118,7 @@ namespace Fudge.ViewModels
         }
 
         public float IncomeSum { get; set; }
-        public float ExpencesSum { get; set; }
+        public float ExpensesSum { get; set; }
 
         // Commands 
         public ICommand PrevMonth { get; private set; }
@@ -131,8 +131,8 @@ namespace Fudge.ViewModels
             {
                 GrafData = await Services.ChartGenerator.GetOverView(CurrentShowDate);
                 IncomeSum = await Services.DatabaseConnection.GetFunctionResult($"SELECT SUM(Price) FROM \"Transaction\" WHERE Type = \"Income\" ");
-                ExpencesSum = await Services.DatabaseConnection.GetFunctionResult($"SELECT SUM(Price) FROM \"Transaction\" WHERE Type = \"Expense\" ");
-                Balance = IncomeSum - ExpencesSum;
+                ExpensesSum = await Services.DatabaseConnection.GetFunctionResult($"SELECT SUM(Price) FROM \"Transaction\" WHERE Type = \"Expense\" ");
+                Balance = IncomeSum - ExpensesSum;
                 if (Balance < 0)
                 {
                     BalanceColor = Color.Red;
@@ -143,20 +143,20 @@ namespace Fudge.ViewModels
                 }
                 TotalMessage = "Balance: ";
             }
-            else if (grafType == "Incoms")
+            else if (grafType == "Incomes")
             {
                 GrafData = await Services.ChartGenerator.GetIncomesGraf(CurrentShowDate);
                 Balance = IncomeSum;
                 BalanceColor = (Color)Application.Current.Resources["BackgroundDark"];
-                TotalMessage = "Total for Incoms: ";
+                TotalMessage = "Total Incomes: ";
             }
-            else if (grafType == "Expences")
+            else if (grafType == "Expenses")
             {
                 GrafData = await Services.ChartGenerator.GetExpencesCategory(CurrentShowDate);
-                Balance = ExpencesSum;
+                Balance = ExpensesSum;
                 BalanceColor = (Color)Application.Current.Resources["BackgroundDark"];
 
-                TotalMessage = "Total for ExpencesCategory: ";
+                TotalMessage = "Total Expenses: ";
             }
 
 
@@ -169,8 +169,8 @@ namespace Fudge.ViewModels
             {
                 GrafData = await Services.ChartGenerator.GetOverView(CurrentShowDate);
                 IncomeSum = await Services.DatabaseConnection.GetFunctionResult($"SELECT SUM(Price) FROM \"Transaction\" WHERE Type = \"Income\" ");
-                ExpencesSum = await Services.DatabaseConnection.GetFunctionResult($"SELECT SUM(Price) FROM \"Transaction\" WHERE Type = \"Expense\" ");
-                Balance = IncomeSum - ExpencesSum;
+                ExpensesSum = await Services.DatabaseConnection.GetFunctionResult($"SELECT SUM(Price) FROM \"Transaction\" WHERE Type = \"Expense\" ");
+                Balance = IncomeSum - ExpensesSum;
                 if (Balance < 0)
                 {
                     BalanceColor = Color.Red;
