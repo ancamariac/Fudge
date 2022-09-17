@@ -12,6 +12,7 @@ namespace Fudge
             InitializeComponent();
 
             VersionTracking.Track();
+
             var firstLaunch = VersionTracking.IsFirstLaunchEver;
 
             if (firstLaunch)
@@ -19,7 +20,6 @@ namespace Fudge
             else
                 MainPage = new NavigationPage(new Views.MainTabbedPage());
 
-            MainPage = new NavigationPage(new Views.WelcomePage());
         }
 
         protected override void OnStart()
